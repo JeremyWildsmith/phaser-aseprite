@@ -1,6 +1,6 @@
 {
   "name": "phaser-aseprite",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Factory for parsing / loading aseprite files into a Phaser.Sprite",
   "main": "AsepriteSpriteFactory.js",
   "scripts": {
