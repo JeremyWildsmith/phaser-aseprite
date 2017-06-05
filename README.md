@@ -28,14 +28,14 @@ The below is an example within a Phaser-CE State class.
 
 Preload will preload the required spritesheet, and Create will build a sprite will all the animations from an aseprite file.
 
-'''typescript
+```typescript
     public preload() {
         AsepriteSpriteFactory.preload(this.game, this.sprite);
     }
-
+    
     public create() {
         var sprite = AsepriteSpriteFactory.create(this.game, this.sprite);
         this.game.add.existing(sprite);
         sprite.animations.play("close");
     }
-'''
+```
