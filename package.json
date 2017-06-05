@@ -1,0 +1,29 @@
+{
+  "name": "phaser-aseprite",
+  "version": "1.0.0",
+  "description": "Factory for parsing / loading aseprite files into a Phaser.Sprite",
+  "main": "AsepriteSpriteFactory.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremyWildsmith/phaser-aseprite.git"
+  },
+  "keywords": [
+    "aseprite",
+    "phaser-ce",
+    "sprite"
+  ],
+  "author": "Jeremy Wildsmith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeremyWildsmith/phaser-aseprite/issues"
+  },
+  "homepage": "https://github.com/JeremyWildsmith/phaser-aseprite#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "phaser-ce": "^2.8.0",
+    "typedjson-npm": "^0.1.7"
+  }
+}
