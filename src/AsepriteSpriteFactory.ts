@@ -19,10 +19,10 @@ export class AsepriteSpriteFactory {
         });
 
         def.meta.frameTags.forEach(function (tag: FrameTagDefinition) {
-            var frameIndice: Array<number> = new Array(tag.to + 1);
+            var frameIndice: Array<number> = new Array(tag.to - tag.from + 1);
 
             for (var i = 0; i < frameIndice.length; i++) {
-                frameIndice[i] = i + 1;
+                frameIndice[i] = i + tag.from + 1;
             }
 
             if (tag.direction === "reverse") {
@@ -38,7 +38,8 @@ export class AsepriteSpriteFactory {
     public static preload(game: Phaser.Game, source: string) {
         var spriteSheetPath: string = AsepriteSpriteFactory.getSpritesheetPath(source);
 
-        game.load.image(spriteSheetPath, spriteSheetPath);
+        if (!game.cache.checkImageKey(spriteSheetPath))
+            game.load.image(spriteSheetPath, spriteSheetPath);
     }
 
     private static getSpritesheetPath(source: string): string {
